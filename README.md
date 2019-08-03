@@ -24,3 +24,5 @@ $ mkdir build & cd build
 $ cmake -DLLVM_ENABLE_PROJECTS=clang  -DCMAKE_BUILD_TYPE=Debug -DLLVM_TARGETS_TO_BUILD="X86" -DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD="RISCV" -DLLVM_USE_LINKER=gold -DLLVM_ENABLE_Z3_SOLVER=OFF ../llvm
 $ make 
 ```
+
+[All the approaches that we tried!](https://docs.google.com/document/d/1NUNGwdhjwOMVfycjOZYy5btk3v21CcCjN7MgsL67TEw/edit?usp=sharing)
