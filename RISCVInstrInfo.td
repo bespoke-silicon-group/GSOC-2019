@@ -262,7 +262,7 @@ class Store_rri<bits<3> funct3, string opcodestr>
 
 let hasSideEffects = 0, mayLoad = 0, mayStore = 1 in
 class Store_rrr<bits<7> funct7, bits<3> funct3, string opcodestr>
-    : RVInstR<funct7, funct3, OPC_STORE, (outs), (GPR:$rd, ins GPR:$rs1, GPR:$rs2),
+    : RVInstR<funct7, funct3, OPC_STORE, (outs), (ins GPR:$rd, GPR:$rs1, GPR:$rs2),
               opcodestr, "$rd, $rs1, $rs2">;
 
 let hasSideEffects = 0, mayLoad = 1, mayStore = 0 in
