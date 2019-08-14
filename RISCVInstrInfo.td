@@ -379,7 +379,7 @@ def OR   : ALU_rr<0b0000000, 0b110, "or">;
 def AND  : ALU_rr<0b0000000, 0b111, "and">;
 
 def SDW	 : Store_rrr<0b0000010, 0b000, "sdw">;
-def LDW	 : Load_rr<b0000010, 0b001, "ldw">;
+def LDW	 : Load_rr<0b0000010, 0b001, "ldw">;
 
 let hasSideEffects = 1, mayLoad = 0, mayStore = 0 in {
 def FENCE : RVInstI<0b000, OPC_MISC_MEM, (outs),
